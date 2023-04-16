@@ -56,23 +56,23 @@ export const constantRoutes = [
   },
 
   {
-    path: '/example',
+    path: '/iast',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
+    redirect: '/iast/home',
+    name: 'iast',
     meta: { title: 'Example', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'iast',
-        name: 'iast',
+        path: 'home',
+        name: 'home',
         component: () => import('@/views/iast/index'),
         meta: { title: 'iast', icon: 'table' }
       },
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'test',
+        name: 'test',
+        component: () => import('@/views/iast/test'),
+        meta: { title: 'test', icon: 'table' }
       },
       {
         path: 'tree',

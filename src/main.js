@@ -33,6 +33,13 @@ Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
 // Vue.use(ElementUI)
 
+import 'golden-layout/lib/jquery'
+import 'golden-layout/src/css/goldenlayout-base.css'
+import 'golden-layout/src/css/goldenlayout-light-theme.css'
+
+import vgl from 'vue-golden-layout'
+Vue.use(vgl);
+
 Vue.config.productionTip = false
 
 new Vue({
